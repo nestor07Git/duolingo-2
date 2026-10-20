@@ -19,7 +19,7 @@ jobs:
       - run: bash lesson.sh
         env:
           DUOLINGO_JWT: ${{ secrets.DUOLINGO_JWT }}
-          LESSONS: ${{ inputs.lessons || 1 }}
+          LESSONS: ${{ inputs.lessons || 10 }}
   delete-old-runs:
     runs-on: ubuntu-slim
     permissions:
